@@ -32,21 +32,18 @@ namespace _02_CollatzConjecture
                 //place clicker inside the while/if so it can count the actual cycles
                 clicker = clicker + 1;
 
-
-               
-
                 if (correctNumber % 2 == 0)
                 {
                     //when integer is even then halve it
                     correctNumber = (correctNumber / 2);
-               
                 }
                 else
                 {
                     //when integer is odd then triple it and add 1
-                    correctNumber = (correctNumber * 3 + 1);
-                 
+                    correctNumber = (correctNumber * 3 + 1); 
                 }
+                
+                
                 //figure out the highest value in the cycle
                 /* { int[] data = { 1, ?? };
                    int large = Data.Max;
@@ -54,12 +51,10 @@ namespace _02_CollatzConjecture
                  }*/
 
          
-
                 if (correctNumber > max)
                 {
                     max = correctNumber;
-                    maxcount = clicker;
-                    
+                    maxcount = clicker;  
                 }
                 Console.WriteLine(correctNumber);
             }
